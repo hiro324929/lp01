@@ -373,7 +373,11 @@
       </div>
 
       <div class="form-field">
-        <label>参加希望日程 <span class="form-required">必須</span></label>
+        <!-- 2026-08-16 一時変更：開催日程が未確定のため、選択式から自由記入式に変更。
+             具体的な日程が決まり次第、下のコメントアウト部分（旧・選択式）に戻すこと -->
+        <label for="f-date">参加希望日程 <span class="form-required">必須</span></label>
+        <textarea id="f-date" name="date" placeholder="例：平日夜、土日どちらでも可、〇月中を希望　など、参加しやすい曜日・時間帯をご記入ください" rows="2" required></textarea>
+        <!--
         <div class="form-radio-list">
           <label class="form-radio"><input type="radio" name="date" value="8月20日(木) 13:00〜15:00" required /><span>8月20日（木）　13:00〜15:00</span></label>
           <label class="form-radio"><input type="radio" name="date" value="8月27日(木) 20:00〜22:00" /><span>8月27日（木）　20:00〜22:00</span></label>
@@ -381,6 +385,7 @@
           <label class="form-radio"><input type="radio" name="date" value="9月16日(水) 20:00〜22:00" /><span>9月16日（水）　20:00〜22:00</span></label>
           <label class="form-radio"><input type="radio" name="date" value="9月24日(木) 13:00〜15:00" /><span>9月24日（木）　13:00〜15:00</span></label>
         </div>
+        -->
       </div>
 
       <div class="form-field">
